@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://wjpxeyes.github.io/sitemap.xml
