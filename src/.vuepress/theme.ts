@@ -7,17 +7,18 @@ const MR_HOPE_AVATAR =
 
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
-
   author: {
-    name: "Mr.Hope",
+    name: "軒眼",
     url: "https://mister-hope.com",
   },
+
+  fullscreen: true,
 
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "wjpxeyes/wjpxeyes.github.io",
 
   docsDir: "src",
 
@@ -27,7 +28,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  footer: '<a href="https://github.com/wjpxeyes">wjpxeyes</a>',
 
   displayFooter: true,
 
@@ -84,6 +85,13 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
+    components: {
+      // 你想使用的组件
+      components: [
+        "BiliBili"
+      ],
+    },
+
     // install @waline/client before enabling it
     // WARNING: This is a test server for demo only.
     // You should create and use your own comment service in production.
@@ -96,7 +104,7 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-
+      alert: true,
       // install chart.js before enabling it
       // chart: true,
 
